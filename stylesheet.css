@@ -1,0 +1,123 @@
+body {
+	background: url('resources/geo_bg.jpg') no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.hider {
+
+	z-index: 10;
+	background: inherit;
+	opacity: 1;
+	position: fixed;
+    width: 100%;
+    top: 0px;
+    padding-bottom: 2em;
+
+}
+
+.billboard {
+	
+	margin: auto;
+	margin-top: 1em;
+	border-radius: .5em;
+	width: 98%;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+
+
+}
+
+/*
+.billboard-heading {
+
+	font-size: 3em;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+
+}
+*/
+
+
+.logo {
+
+	margin: 0 auto;
+
+}
+
+.add, .tweet a {
+
+	cursor: pointer;
+}
+
+
+.wrapper {
+	
+	margin: auto;
+	margin-top: 7em;
+	z-index: 5;
+	overflow: auto;
+
+}
+
+.sidebar {
+
+	position: fixed;
+	left: 0px;
+	width: 30vw;
+	background: rgba(255, 255, 255, 0.8);
+	border-top-right-radius: 2em;
+	border-bottom-right-radius: 2em;
+
+}
+
+.tweets {
+
+	margin: auto;
+	width: 60vw;
+	padding: 1em;
+	background: rgba(255, 255, 255, 0.8);
+	border-bottom-right-radius: 2em;
+	border-bottom-left-radius: 2em;
+	float: right;
+
+}
+
+.tweet {
+
+	padding-top: .5em;
+	padding-bottom: 1em;
+	border-bottom: solid .1em black;
+
+}
+
+
+.user {
+
+	font-weight: 700;
+	font-size: .8em;
+	font-family: 'Gentium Book Basic', serif;
+	
+}
+
+.timestamp {
+
+	font-size: .6em;
+	color: #333333;
+	float: right;
+	
+}
+
+.message {
+
+	margin-left: 2em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	
+}
+
+
+

@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="jquery.js"></script>
-    <script src="data_generator.js"></script>
+    
+    <script type="text/javascript" src="vendor/jquery.js"></script>
+    <script type="text/javascript" src="vendor/tinyAgo.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400|Gentium+Book+Basic:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <script type="text/javascript" src="data_generator.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
-    <script>
+    <div class="hider">
+      <header class="billboard">
+          <div class="logo"><img src="resources/twitter-bird.svg" alt="Birdy" style="width:3em;height:3em;"></div>
+          <div class="add">Show More</div>
+      </header>
+    </div>
+    
+    <div class="wrapper">
+    <section class="sidebar"></section>
+      <section class="tweets"></section>
+    </div>
 
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
-
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
-
-      });
-
-    </script>
   </body>
 </html>
