@@ -12,7 +12,7 @@ $(document).ready(function(){
     $field.hide();
 
     // utility function from data_generator.js
-    var writeTweet = function(message){
+    /*var writeTweet = function(message){
     if(!visitor){
       throw new Error('set the global visitor property!');
     }
@@ -20,7 +20,7 @@ $(document).ready(function(){
     tweet.user = visitor;
     tweet.message = message;
     addTweet(tweet);
-    };
+    };*/
     
     // grab tweet content from data_generator.js and call placeTweet()
     var getTweetContent = function() {
